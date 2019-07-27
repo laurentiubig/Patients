@@ -1,0 +1,174 @@
+/************* general elem styles ***********/
+body, html {
+  height: 100%;
+}
+
+
+/*********background img for login pag*****/
+.bg-img-login{
+   /* Center and scale the image nicely */
+  background:url("../img/login-back.jpg");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+  height:100%;
+
+  /*blur effect*/
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+
+}
+#u-error{
+  color:red;
+  font-weight:bolder;
+  display:none;
+}
+#r-error{
+  color:red;
+  font-weight:bolder;
+  display:none;
+}
+/*general form css*/
+.form-op{
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+  color:#eee
+}
+
+/*all form input styles for login page*/
+.form-op input{
+  background-color:rgba(0, 0,0, 0.3);
+  color:#eee
+}
+
+/*input setting for when the screen width is under 700px*/
+@media(min-width: 700px) {
+  .form-op input{
+    width:350px;
+    margin:auto;
+  }
+}
+
+/*********transition height(add/rem class inn to the forms in the script) **********/
+#register-form,
+#login-form{
+  max-height: 0;
+  transition: max-height 1s ease-out;
+  overflow: hidden;
+}
+.inn{
+  max-height: 500px !important;
+  transition: max-height 1s ease-in !important;
+}
+
+
+/************patients form******************/
+#add-patients-form{
+  font-weight: bold;
+  z-index: 2;
+  width: 40%;
+  max-height: 0;
+  transition: max-height 1s ease-out;
+  overflow: hidden;
+  color:#eee;
+
+  /*position*/
+  margin:15px 5%;
+  float:left;
+}
+#add-patients-form input{
+  background-color:rgba(0, 0,0, 0.3);
+  color:#eee
+}
+
+/********** Table style ****************/
+
+  #pat-table {
+    margin:0 auto;
+    border-collapse: collapse; 
+    width: 90%;
+    border: 1px solid #eee;
+    font-size: 18px; 
+    border-radius:10%;
+
+  }
+  #pat-table td{
+    color:#eee
+  }
+  #pat-table th,#pat-table td {
+    text-align: left; 
+    padding: 12px; 
+
+  }
+  
+  #pat-table tr {
+    border-bottom: 1px solid #eee; 
+
+  }
+  #pat-table tr:hover{
+    background-color: rgba(0, 0,0, 0.3);
+  }
+  #pat-table tr.header  {
+    background-color: #eee;
+  }
+
+/*Logout btn position*/
+
+#log-out-btn{
+  margin:30px 7%;
+  float:right;
+
+}
+
+#hello-usr{
+  margin:30px 7%;
+  font-weight: bold;
+  float:left;
+  font-size:40px;
+  color:#eee;
+}
+
+#search-inp{
+  margin:15px 7%;
+  float:right;
+  width:40%;
+  background-color:rgba(0, 0,0, 0.3);
+  color:#eee;
+}
+/*positioning add pat*/
+#add-pat-btn{
+  margin:15px 7%;
+  float:left;
+}
+/*particle js settings*/
+#particles-js{
+  position:absolute;
+  width:100%;
+  height:120%;
+  z-index:-1;
+
+}
+/*body back*/
+#pat-b{
+  background-image:url("../img/pat-back.png");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: 100% 150%; 
+
+}
+
+.modal-content {
+  background-color: rgba(238,238,238,1) !important;
+}
+#update-btn{
+  width:30%;
+  margin:0 auto;
+}
